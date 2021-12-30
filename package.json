@@ -1,0 +1,25 @@
+{
+  "name": "examle-sequelize-csdb-mssql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "set NODE_ENV=development&&nodemon app.js",
+    "createDb": "sequelize db:create --env development",
+    "migrateDb": "sequelize db:migrate --env development",
+    "dropAllMigrate": "sequelize db:migrate:undo:all --env development",
+    "dropDb": "sequelize db:drop --env development"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "sequelize": "^6.11.0",
+    "tedious": "^14.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "sequelize-cli": "^6.3.0"
+  }
+}
